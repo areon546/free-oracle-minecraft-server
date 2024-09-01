@@ -12,7 +12,8 @@ A guide on setting up a free 24/7 minecraft server
 
 
 #### Upgrade to a Paid Account (Optional)
-This step is optional but recommended. 
+This step is optional but recommended. It requires you to have $100 within a bank account, the transaction is temporary and gets cancelled on Oracle's side once the bank confirms your account to be active. 
+This is a precautionary measure on Oracle's side to demonstrate that your account would be able to pay for any running costs. If you stick to their free tier of resources and use them within the predefined limits, they won't actually charge you (unless something was configured incorrectly). 
 
 ### Creating the Virtual Machine
 Create a Virtual Machine with these settings
@@ -25,7 +26,7 @@ Recommended commands to use:
 - screen
 - sh
 - crontab (optional)
-
+- wget
 
 
 - find the server files and download via wget
@@ -35,7 +36,11 @@ Recommended commands to use:
 
 
 ### Setting up the Minecraft Server
+
 If it is a modded server, make sure to install whatever version of Forge or Fabric of whatnot that is used as the backbone of the server. 
+Since we are doing this from the command line, make sure to install these applications to create a server. You need to tell it in the command line that you are installing a server. 
+
+If you do install Forge or Fabric, it will likely be a .jar. These have a separate way of extracting, separate from how zips work. 
 
 #### Installing links via the internet
 To install a link via the internet, you need to type in the following command into the terminal. 
@@ -45,6 +50,7 @@ wget [linkToObject]
 ```
 
 You need to be careful to give a link to the documents being hosted, instead of the link to a download page. Lots of download pages are pages that will download a file that is stored somewhere else on the internet. 
+You will know you have the correct link if it ends with a '.zip' or '.7z' at the end. Beware '.zip' has started to be used as a domain so be careful if you end up on a website ending with '.zip'.
 
 #### Installing the Version
 First, you need to find the version of minecraft you want to install. You want to specifically find the server files that you are going to install, and then you install them using 'wget [link]' command mentioned above. 
@@ -52,7 +58,10 @@ First, you need to find the version of minecraft you want to install. You want t
 #### Installing the Backbone
 If you are not using mods, then you can skip this step. 
 
+Now, find the modpack you want to install on a website like Curseforge or Modrinth, and install it via the same process as before. This will likely be zipped. 
 
+You have to install a package that will let you unzip files from the command line. 
+Install it via:
 
 Then unzip the zip file. 
 
