@@ -1,22 +1,34 @@
 # free-oracle-minecraft-server
-A guide on setting up a free 24/7 minecraft server
+A guide on setting up a free 24/7 minecraft server.
 
 
-- oracle
-	- oracle sign in - https://www.oracle.com/uk/cloud/sign-in.html
-- tutorial to follow for oracle section
-	- yt tutorial - https://www.youtube.com/watch?v=0kFjEUDJexI
-	- old oracle tutorial, mostly up to date - https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud#create-a-virtual-machine-instance
+This guide follows [this blog post](https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud) by Oracle, with a couple adjustments to make your life easier. If you notice the blog is out of date, post a git issue. 
+
 
 ### Make A Free Oracle Account
+The first thing you need to do to setup a free minecraft server is create an Oracle Free Tier account. 
 
+![Free Tier Account Photograph](media/image.png)
+
+Follow the above guide for this. 
 
 #### Upgrade to a Paid Account (Optional)
-This step is optional but recommended. It requires you to have $100 within a bank account, the transaction is temporary and gets cancelled on Oracle's side once the bank confirms your account to be active. 
+This step is optional but strongly recommended. It will make the [creating a virtual machine](README.md#creating-the-virtual-machine) step much simpler and it will be essentially instant. 
+
+Why are we doing this? Because for all basic free tier accounts, theres a limit on how many free-tier servers can exist. If you upgrade, then Oracle will consider you a paying customer, and let you make the instance. 
+
+There are some prerequestites of this step. 
+- Access to a debit card from a bank account
+- You have at least $100 or the equivalent in your local currency, in said bank account
+
+It requires you to have $100 worth within a bank account, the transaction is temporary and gets cancelled on Oracle's side once they confirm your account to have this money. 
+
+The transaction WILL NOT deduct any money from your account when cancelled. 
+
 This is a precautionary measure on Oracle's side to demonstrate that your account would be able to pay for any running costs. If you stick to their free tier of resources and use them within the predefined limits, they won't actually charge you (unless something was configured incorrectly). 
 
 ### Creating the Virtual Machine
-Create a Virtual Machine with these settings
+Create a Virtual Machine with the settings seen in the blog post. 
 
 ### Connecting to a Virtual Machine
 Recommended tools to use: 
@@ -26,7 +38,7 @@ Recommended commands to use:
 - screen
 - sh
 - crontab (optional)
-- wget
+- wget / curl
 
 
 - find the server files and download via wget
@@ -117,3 +129,14 @@ To stop a screen instance, you can kill it in a simlar method to detaching it.
 - vim
 	- https://linuxize.com/post/how-to-save-file-in-vim-quit-editor/
 
+
+
+
+
+# Links
+
+- oracle
+	- oracle sign in - https://www.oracle.com/uk/cloud/sign-in.html
+- tutorial to follow for oracle section
+	- yt tutorial - https://www.youtube.com/watch?v=0kFjEUDJexI
+	- old oracle tutorial, mostly up to date - https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud#create-a-virtual-machine-instance
