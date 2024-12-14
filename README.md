@@ -68,6 +68,8 @@ Since we are doing this from the command line, make sure to install these applic
 
 If you do install Forge or Fabric, it will likely be a .jar. These have a separate way of extracting, separate from how zips work. 
 
+You can get servers for older versions [here](https://mctimemachine.com/), however minecraft also showcases the most recent server file [here](https://minecraft.net/download/server)
+
 ### Installing links via the internet
 To install a link via the internet, you have a choice of commands you can use. At least one of these should be available. 
 <!-- TODO finish section -->
@@ -123,7 +125,7 @@ Below are links that you can use to help you learn cron. If I ever do cron for m
 ### 2 Screen
 This is the simpler way of doing this, but there is no automation to it, so if your server crashes you will have to log in to reactivate it. 
 
-What it basically simulates is tabs or windows of an application on the server side, so you can have a terminal window running a web server, and another a ftp server, and another working as a firewall for example. 
+What it basically simulates is tabs or windows of an application on the server side, so you can have a terminal window running a web server, and another a ftp server, and another working as a firewall for example. These will run in the background so long as the server is active, hence the analogy of tabs. 
 
 After you connect to your server via ssh, you can run the command 'screen'.
 
@@ -134,12 +136,14 @@ Detaching is basically putting it in the background and it will work by itself.
 
 When you want to check up on it, you can use two commands to rejoin this screen. 
 
-'screen -ls' will display all screens that haven't been killed (ie ongoing screens), 
-and then 'screen -r abcde' where abcde is a number that 'screen -ls' showed you that identifies a specific screen instance. 
+`screen -ls` will display all screens that haven't been killed (ie ongoing screens), 
+and then `screen -r [abcde]` where abcde is a number that 'screen -ls' showed you that identifies a specific screen instance. 
+You can also name it by using the command `screen -S name`, and you can use the name to reattach to later on. 
 
 Now you can check up on the screen, see what has been running, and so on. 
 
 To stop a screen instance, you can kill it in a simlar method to detaching it. 
+The specifics are 
 
 
 - screen
