@@ -1,5 +1,8 @@
 #! /bin/Bash
 
+echo "Use this to call the API to lookup the location of the ip address"
+# https://ipgeolocation.io/ip-location-api.html#documentation-overview
+
 
 if [ $# -ne 1 ]; then
 	echo "Error: Invalid number of arguments"

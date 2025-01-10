@@ -1,1 +1,2 @@
-screen java -Xmx4049M -Xms1024M -jar server.jar nogui -s minecraftServer
+screen java -Xms1024M -jar -Xmx4049M server.jar nogui -s minecraftServer
+

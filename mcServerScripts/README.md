@@ -19,6 +19,8 @@ export DRAGON_API_KEY
 
 
 
+- mod management, this project seems very useful [ferium](https://github.com/gorilla-devs/ferium)
+- command line MC launcher [portablemc](https://github.com/mindstorm38/portablemc)
 
 
 

@@ -3,6 +3,7 @@ A guide on setting up a free 24/7 minecraft server.
 
 
 This guide follows [this blog post](https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud) by Oracle, with a couple adjustments to make your life easier. If you notice the blog is out of date, post a git issue. 
+I've had issues with the link not working before, hence I have made this so that I can guarantee being able to access it myself, and automate sections of the blog where I need to work alongside the terminal for my convenience. 
 
 
 ## Make A Free Oracle Account
@@ -21,11 +22,12 @@ There are some prerequestites of this step.
 - Access to a debit card from a bank account
 - You have at least $100 or the equivalent in your local currency, in said bank account
 
-It requires you to have $100 worth within a bank account, the transaction is temporary and gets cancelled on Oracle's side once they confirm your account to have this money. 
+It requires you to have the equivalent of $100 within a bank account, however the transaction is temporary and gets cancelled on Oracle's side once they confirm your account has enough money. This is a precautionary measure on Oracle's side to demonstrate that your account would be able to pay for any running costs. 
 
-The transaction WILL NOT deduct any money from your account when cancelled. 
+Things to note: 
+The transaction WILL NOT deduct any money from your account when cancelled, but it will disappear with no record of it's existance. 
 
-This is a precautionary measure on Oracle's side to demonstrate that your account would be able to pay for any running costs. If you stick to their free tier of resources and use them within the predefined limits, they won't actually charge you (unless something was configured incorrectly). 
+As a premium account user, if you only use their free tier of resources and use them within the predefined limits, they won't actually charge you (unless something was configured incorrectly). 
 
 ## Creating the Virtual Machine
 Create a Virtual Machine with the settings seen in the blog post. 
@@ -46,14 +48,9 @@ Commands to use:
 Optional
 - crontab (optional)
 
-
-
 Screen lets you connect via shell and leave a process running in the background.
 wget and curl can be used to download resources off of the internet / a network. 
 sh is used to run bash scripts which can simplify running the server from a long command to a simpler one. 
-
-
-
 
 - find the server files and download via wget
 	- https://www.curseforge.com/minecraft/modpacks/vault-hunters-1-18-2/files/5413446
@@ -62,13 +59,12 @@ sh is used to run bash scripts which can simplify running the server from a long
 
 
 ## Setting up the Minecraft Server
-
 If it is a modded server, make sure to install whatever version of Forge or Fabric of whatnot that is used as the backbone of the server. 
 Since we are doing this from the command line, make sure to install these applications to create a server. You need to tell it in the command line that you are installing a server. 
 
 If you do install Forge or Fabric, it will likely be a .jar. These have a separate way of extracting, separate from how zips work. 
 
-You can get servers for older versions [here](https://mctimemachine.com/), however minecraft also showcases the most recent server file [here](https://minecraft.net/download/server)
+You can get servers for older versions [here](https://mctimemachine.com/), however minecraft also showcases the most recent server file [here](https://minecraft.net/download/server). 
 
 ### Installing links via the internet
 To install a link via the internet, you have a choice of commands you can use. At least one of these should be available. 
@@ -80,7 +76,7 @@ wget [linkToObject]
 ```
 
 ```unix
-curl -o [fileName.extension] [linkToObject]
+curl -o [fileName] [linkToObject]
 ```
 
 
@@ -156,7 +152,8 @@ The specifics are
 
 
 
-
+# TODO
+- need to read NBT data somehow
 
 # Links
 
