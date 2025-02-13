@@ -1,18 +1,18 @@
 #! /bin/Bash
 
-echo "Use this to call the API to lookup the location of the ip address"
+# echo "Use this to call the API to lookup the location of the ip address"
 # https://ipgeolocation.io/ip-location-api.html#documentation-overview
 
 
 if [ $# -ne 1 ]; then
 	echo "Error: Invalid number of arguments"
-    exit 1
+    return 1
 fi
 
 ip=$1
 
 ipValid () {
-    local ipv4Exp="([0-9]{3}[.]){3}[0-9]{3}"
+    local ipv4Exp="([0-9]{1,3}[.]){3}[0-9]{1,3}"
 
     numIps=$(echo "$1" | grep -E "$ipv4Exp" -c)
 
@@ -26,8 +26,7 @@ ipValid () {
 }
 
 ipValid $ip
-
-echo "asdas $result"
+echo $result
 
 . ./secrets.sh
 apiKey=$DRAGON_API_KEY
@@ -35,4 +34,4 @@ apiKey=$DRAGON_API_KEY
 
 call="https://api.ipgeolocation.io/ipgeo?apiKey=$apiKey&ip=$ip"
 
-# curl $call
+curl $call -s | jq .country_name
