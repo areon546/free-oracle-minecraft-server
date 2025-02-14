@@ -3,6 +3,7 @@ A guide on setting up a free 24/7 minecraft server.
 
 
 This guide follows [this blog post](https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud) by Oracle, with a couple adjustments to make your life easier. If you notice the blog is out of date, post a git issue. 
+
 I've had issues with the link not working before, hence I have made this so that I can guarantee being able to access it myself, and automate sections of the blog where I need to work alongside the terminal for my convenience. 
 
 
