@@ -2,12 +2,26 @@
 
 ## Downloading Required Resources
 
+To download the required resources, you are going to have to find the actual download files. This process varies based on the site,
+however the most reliable way is to go to the download link, and then find the link in the HTML page for the download.
+
+Once you have the links, depending on whether you want to do a modded server or not, you will have a variable time.
+The easiest thing to do is just to setup a vanilla server. If you want to however have a modded server, eg Forge, Fabric, or otherwise, guides will be linked below.
+
+- [Fabric](./fabric.md)
+- [Forge](./forge.md)
+
+### Downloading Files
+
+Once you have the required links for the minecraft server you want to run,
+
 ## Running the Server
 
 ## Now What?
 
-~~~
+Now that you are able to actually run the server, have a look at [what to do after you have a server](/options/post-install.md)
 
+---
 
 ### Downloading Resources
 

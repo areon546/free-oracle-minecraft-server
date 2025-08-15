@@ -38,6 +38,7 @@ Once that is done, wait for it to load and then we can start to connect to it. T
 
 One recommendation to make here: create 2 or 4 servers, and split your allocated free tier resources (4 CPU cores and 24GB RAM on Free Tier Images) between them.
 This is helpful in case you want to use said servers for another purpose, eg if you wanna use them to host a website. NOTE: Hosting additional services will require you to configure ports and security rules, and perform several of the following steps repeatedly.
+This is best to do early on, but if you don't want to make 4, then I strongly recommend making a 3 core and a 1 core server split, then you can have a more intensive server and a less intensive one.
 
 ## Connecting to a Virtual Machine
 
@@ -55,21 +56,17 @@ Optional
 
 - crontab (optional)  : automate actions such as backups and the like
 
-### Routers
+If you do not have any of these, you will have to download the relevant packages.
 
-- mcvcli              : simplifies the process of server creation, especially for MODRINTH modpacks
-- manual              : manually running the commands and installing the server files
-- docker              : simplifies process of server creation, through the use of
-
-## Setting up a Server
+## Setting up a Server: Routes
 
 The Oracle guide does have setup steps for actually starting the server, and you can follow them, however they are for primarily a Vanilla version of the game. As a result, you would end up having to look through long guides such as <https://minecraft.wiki/w/Tutorial:Setting_up_a_Java_Edition_server>.
 
-Depending on what route you want to take, look into the following:
+There are several different ways you can go from hereon.
 
-- [mcvcli](./options/mcvcli.md)
-- [manual](./options/manual.md)
-- [docker](./options/docker.md)
+- [mcvcli](./options/mcvcli.md)              : simplifies the process of server creation, especially for MODRINTH modpacks
+- [manual](./options/manual.md)              : manually running the commands and installing the server files
+- [docker](./options/docker.md)              : simplifies process of server creation, through the use of
 
 ## After it is Set Up
 
