@@ -41,7 +41,7 @@ If you want to run commands, you can then run `mcvcli attach`, where you will be
 
 ## What Now?
 
-Now, I recommend reading [what to do after installing](/options/post-install.md).
+Now, I recommend reading [what to do after installing](./post-install.md).
 Nothing else on this page is necessary, and you will likely learn if you experiment.
 However, if you wish to learn more, read the following:
 
@@ -79,7 +79,7 @@ Be aware, depending on what you choose between these, not all options will be cr
 `install` just tells the program to install a jar file from the internet
 `modrinth` tells MCVCLI to install a jar file based on a modrinth modpack that has 'server'
 
-![client vs server](/media/mcvcli/client-server.png)
+![client vs server](../media/mcvcli/client-server.png)
 NOTE: The relevant modpack must claim to be server compatible to show up in the Modrinth list.
 Furthermore, if you do not find your modpack, you may select `search` in order to have the program search through the modrinth website, looking for servers to download
 
@@ -87,9 +87,9 @@ Furthermore, if you do not find your modpack, you may select `search` in order t
 
 This only really matters if doing a modded server, if doing a vanilla server, you will only have 1 build available to you. See below:
 
-![vanilla build options, only one](/media/MCVCLI/vanilla-builds.png)
+![vanilla build options, only one](../media/MCVCLI/vanilla-builds.png)
 
-[fabric build options, many](/media/mcvcli/vanilla-builds.png)
+[fabric build options, many](../media/mcvcli/vanilla-builds.png)
 
 ### Install
 

@@ -9,7 +9,7 @@ Mirror Date: 2025-05-16
 
 The first thing you need to do to setup a free minecraft server is create an Oracle Free Tier account.
 
-![Free Tier Account Photograph](media/image.png)
+![Free Tier Account Photograph](./media/image.png)
 
 Follow the above guide for this. No changes made.
 
@@ -71,4 +71,4 @@ There are several different ways you can go from hereon.
 ## After it is Set Up
 
 Once you setup your server, there are a couple things to be aware of.
-As such, please read the following: [post intall](/options/post-install.md)
+As such, please read the following: [post intall](./options/post-install.md)
