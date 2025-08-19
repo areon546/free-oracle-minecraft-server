@@ -26,9 +26,11 @@ There are some prerequisites of this step.
 
 It requires you to have the equivalent of $100 within a bank account, however the transaction is temporary and gets cancelled on Oracle's side once they confirm your account has enough money. This is a precautionary measure on Oracle's side to demonstrate that your account would be able to pay for any running costs. If you follow this guide and never surpass the free tier resources, you will never be charged.
 
-Things to note:
+To note:
 The transaction WILL NOT deduct any money from your account when cancelled, but it will disappear with no record of it's existence.
 As a premium account user, if you only use their free tier of resources and use them within the predefined limits, they won't actually charge you (unless something is configured incorrectly).
+
+If you need any assistance, you can watch [a guide on setting up a Minecraft server](https://www.youtube.com/watch?v=0kFjEUDJexI). There are many on the internet, of varying quality.
 
 ## Creating the Virtual Machine
 
@@ -58,15 +60,15 @@ Optional
 
 If you do not have any of these, you will have to download the relevant packages.
 
-## Setting up a Server: Routes
+## Setting up a Server: Options
 
 The Oracle guide does have setup steps for actually starting the server, and you can follow them, however they are for primarily a Vanilla version of the game. As a result, you would end up having to look through long guides such as <https://minecraft.wiki/w/Tutorial:Setting_up_a_Java_Edition_server>.
 
 There are several different ways you can go from hereon.
 
 - [mcvcli](./options/mcvcli.md)              : simplifies the process of server creation, especially for MODRINTH modpacks
-- [manual](./options/manual.md)              : manually running the commands and installing the server files
-- [docker](./options/docker.md)              : simplifies process of server creation, through the use of
+- [manual - vanilla](./options/manual.md)              : manually running the commands and installing the server files
+- [docker](./options/docker.md)              : simplifies process of server creation through the use of containers
 
 ## After it is Set Up
 

@@ -7,7 +7,8 @@
 If you have bought a Domain name, say from Cloudflare,
 you will be able to setup DNS records to your public IP address,
 and instead of joining via IP,
-you will be able to
+you will be able to assign a website, e.g. minecraft.example.com,
+which is easier to remember than an IP address.
 
 ## Running Backups
 
@@ -44,6 +45,11 @@ To stop a player from being an OP, you can run DEOP.
 You can ban users per Playername and IP Address.
 Banning per IP address can simply be done if you know their name and they are logged into the game.
 If they are not logged into the game, you would have to find out their IP address through the server's logs.
+
+As such, you have two options:
+
+- the user is still logged in : `ban-ip [username]`
+- the user is logged out      : `ban [username]`, and then go into logs to `ban-ip` them aswell
 
 ## Tools
 
@@ -110,5 +116,5 @@ The specifics are
 - oracle
   - oracle sign in - <https://www.oracle.com/uk/cloud/sign-in.html>
 - tutorial to follow for oracle section
-  - yt tutorial - <https://www.youtube.com/watch?v=0kFjEUDJexI>
+  - yt tutorial - 
   - old oracle tutorial, mostly up to date - <https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud#create-a-virtual-machine-instance>
