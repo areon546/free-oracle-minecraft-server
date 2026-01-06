@@ -74,3 +74,10 @@ There are several different ways you can go from hereon.
 
 Once you setup your server, there are a couple things to be aware of.
 As such, please read the following: [post intall](./options/post-install.md)
+
+## Useful Websites:
+
+- [setup.md](https://www.setup.md/docs)
+- [minecraft.wiki](https://minecraft.wiki/), don't use the fandom site that plays videos and has worse wiki pages 
+- [helpful websites, misc](https://www.4netplayers.com/en-us/blog/minecraft/helpful-minecraft-websites/)
+
